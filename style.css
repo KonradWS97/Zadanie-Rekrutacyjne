@@ -4,6 +4,25 @@
     padding: 0;
 
 }
+.przycisk
+{   display: flex;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.scroll
+{
+    display: block;
+    font-weight: bolder;
+    color:#fff;
+    cursor: pointer;
+    transform: translateY(5px),translateX(3px)
+}
 .send
 {
     display: none;
@@ -147,7 +166,7 @@ body {
     margin-left: 15%;
     transform: translateY(-27%);
 }
-.doc
+.titleOfGrunge
 {
     position: absolute;
     font-size: 330%;
@@ -189,7 +208,7 @@ body {
 {   display: flex;
     position: absolute; 
     height: 2px;
-    width: 54.5%;            /* jest problem z linią przechodzi ona przez kropke*/
+    width: 54.5%;            
     background-color: black;
     margin-left: 40%;
     margin: 30%;
@@ -205,7 +224,7 @@ body {
     margin-left: 40%;
     margin: 30%;
 }
-.aku             /*     pytanie czemu ładuje sie przy lekarzu gdy jest to nowy artykul? */
+.kurtH2         
 {   display: flex;
     position: absolute;
     font-size: 300%;
@@ -214,7 +233,7 @@ body {
     margin-top: 20%;
     font-weight: bolder;
 }
-.igla 
+.imgKurt
 {   display: flex;
     position: absolute;
     transform:translateY(35%) translateX(-100%)
@@ -264,7 +283,7 @@ body {
     top: calc(50% - 1rem/2);
     left: calc(50% - 1rem/2);
 }
-.akuInf
+.kurtInf
 {   
     color:rgb(236, 234, 234);
     display: flex;
@@ -327,17 +346,15 @@ body {
     margin-top: 10%;
 
 }
-.bole
+#slider
 {
-    margin-left: 0%;
-    transform: translateY(+150%)translateX(-640%);
-    width: 120%;
-    list-style-type: square;
-
+    display: block;
+    transform: translateY(150vh);
 }
-.kreg
-{
-    list-style-type: none;
+.w-100 {
+    width: 90%!important;
+    height: 90%!important;
+    margin-left: 4vw;
 }
 
 @media (min-width: 1700px)
@@ -427,7 +444,7 @@ body {
         margin-left: 15%;
         transform: translateY(-45%);
     }
-    .doc
+    .titleOfGrunge
     {
         position: absolute;
         font-size: 130%;
@@ -444,16 +461,16 @@ body {
         font-weight: bolder;
     
     }
-     .bio                   /*   cos jest nie tak flex nie działa jak flex*/
+     .bio                
     {   color:gray;
         display: flex;
         text-align: flex-end;
-        position: absolute;        /*  to działa*/
-        justify-content: flex-end;      /*   to nie działa*/
-        align-self: center;          /*   to nie działa */
-        width: 45%;           /*  to działa*/
-        margin-left: 40%;                 /*  to działa*/
-        transform: translateY(+150%);   /*  to działa*/
+        position: absolute;        
+        justify-content: flex-end;    
+        align-self: center;          
+        width: 45%;           
+        margin-left: 40%;                
+        transform: translateY(+150%);  
     }
     .card-title 
     {  position: relative;

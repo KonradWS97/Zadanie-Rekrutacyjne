@@ -12,11 +12,14 @@
         <title>Nirvana</title>
     </head>
 <body>
+    <div class="przycisk" id="przycisk">
+        <p class="scroll">downᐁ</p>
+    </div>
     <div id="sidebar" class="sidebar">
         <form >
             <label id="textCaptcha" for="captcha">reCAPTCHA</label><br><br>
             <Button id="captcha" onclick="captchaMy()">Sprawdzanie czy nie jesteś botem</Button><br><br>
-            <div id="formularz" class="formularz">
+            <div id="formularz" class="formularz" >
                 <label for="name">Imię nazwisko:</label>
                 <input type="text" id="name" name="name" onfocusout="validationName()"><br><br>
                 <p id="alertName" style="color:red"></p>
@@ -30,11 +33,12 @@
                 <textarea id="textEmail"name="nazwa" cols="40" rows="5" onfocusout="validationText()">Tu wpisz treść maila</textarea>
                 <p id="alertText" style="color:red"></p>
                 <br><br>
-                <input id="send" class="send" type="submit" value="wyslij">
+                <input id="send" class="send" type="submit" value="Wyslij" onfocus="validationAll()">
+                <p id="textData"></p>
             </div>
         </form>
           
-    <script src="zadanie.js"> </script>
+
     </div>
     <header id="headerPage">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -55,9 +59,9 @@
          </nav>
          
          <div class="card bg-dark text-dark">
-           <img src="plakat.jpg" class="card-img" alt="doktor">
+           <img src="plakat.jpg" class="card-img" alt="Nirvana">
            <div class="card-img-overlay">
-             <h5 class="card-title">Zespół stólecia </h5>
+             <h5 class="card-title">Zespół stulecia </h5>
              
            </div>
          </div>
@@ -65,7 +69,7 @@
      <article class="artykul flexbox-container">
        <div class="blok"></div> 
        
-       <h2 class="doc"> Prekursorzy Grunga </h2>
+       <h2 class="titleOfGrunge"> Prekursorzy Grunga </h2>
        <h4 class="inf">Nirvana czyli zgaśniecie</h4>
       <p class="bio">Cobain i Novoselic poznali się w 1985. Obaj byli fanami zespołu Melvins, 
             uczyli się akordów do utworów tej grupy oraz uczęszczali na jej koncerty. 
@@ -81,9 +85,9 @@
      <article class="artyku2 flexbox-container">
       <div class="nextElement">
       <div class="blok2">
-       <h2 class="aku"> Kurt Cobain</h2> 
+       <h2 class="kurtH2"> Kurt Cobain</h2> 
        <div class="insideCir">
-         <img src="kurt.jpg" class="igla" alt="kurt"> 
+         <img src="kurt.jpg" class="imgKurt" alt="kurt"> 
           <div class="inCir1">
            <div class="inCir2">
             <div class="inCir3"> <div class="dot"></div> </div>
@@ -92,7 +96,7 @@
        </div>
       </div> 
        <div class="line"></div> 
-       <p class="akuInf">
+       <p class="kurtInf">
         Kurt od wczesnej młodości cierpiał na chroniczne bóle brzucha, 
         których jednak nie potrafili zdiagnozować lekarze. Brał narkotyki – bo jak twierdził – tylko one pomagały mu w uśmierzeniu bólu.
         Pierwsze doświadczenie Kurta z narkotykami miało miejsce, gdy ten miał 13 lat – po raz pierwszy palił wtedy konopie indyjskie.
@@ -101,11 +105,39 @@
         w rodzinnym stanie Cobaina – Waszyngtonie. Później artysta zażywał heroinę sporadycznie – dopiero w latach 90. na skutek zwiększającej
         się sławy i bólu brzucha uzależnienie muzyka pogłębiło się.
        </p>
-     
     </article>
-   
-   
-   
+ <div id="slider" class="slider">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="picture1.jpg" class="d-block w-100" alt="picture1">
+              </div>
+              <div class="carousel-item">
+                <img src="picture3.jpg" class="d-block w-100" alt="picture3">
+              </div>
+              <div class="carousel-item">
+                <img src="picture4.jpg" class="d-block w-100" alt="picture4">
+              </div>
+              <div class="carousel-item">
+                <img src="picture5.jpeg" class="d-block w-100" alt="picture5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+ </div>
+     
+    
+    
+ <script src="zadanie.js"> </script>
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"

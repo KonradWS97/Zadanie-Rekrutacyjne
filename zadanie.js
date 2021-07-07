@@ -54,6 +54,20 @@ function validationText()
         }
         else document.getElementById("alertText").innerText="";
 }
+function validationAll()
+{    let imie = document.getElementById("name").value
+        let textEmail = document.getElementById("textEmail").value
+    if(textEmail === "" || textEmail === "Tu wpisz treść maila" ||teleNumber === "" ||  teleNumber.length < 9 || teleNumber.length > 9 || userEmail === "" || userEmail.includes("@") === false || imie === "" )
+    {   
+        let textData=document.getElementById("textData")
+        textData.innerHTML="bład w danych"
+        textData.style.color ="red"
+    }
+    else
+    {
+        console.log("chcesz wysłac?")
+    }
+}
 function funkcjasidebar()
  {
     document.getElementById("sidebar").classList.toggle('active');
@@ -130,14 +144,16 @@ else
     console.log(pytania[e].question)
     let response2 = window.prompt(pytania[e].question)
     if(response2 == pytania[e].answer)
-    {   btnSend.style.display="block"
+    {   
+        btnSend.style.display="block"
         console.log('dobrze')
         btnCaptcha.style.display="none"
         textCaptcha.style.display="none"
         formularz.style.display="block"
     }
     else
-    {   btnCaptcha.style.display="none"
+    {   
+        btnCaptcha.style.display="none"
         textCaptcha.innerHTML="Zablokowano Ci Dostep do formularzu :("
         console.log('brak dostepu')
         alert("zablokowano Ci dostęp do wysylu danych")
@@ -145,3 +161,14 @@ else
 }
 
 }
+//do scrollutona
+const btnscroll= document.getElementById("przycisk")
+const punkt=document.getElementById("slider")
+btnscroll.addEventListener('click', function (e) {
+    const s1=punkt.getBoundingClientRect()
+    console.log(s1)
+     punkt.scrollIntoView({ behavior: 'smooth'})
+})
+//do slidera
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)
