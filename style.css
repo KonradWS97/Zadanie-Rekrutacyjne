@@ -1,0 +1,510 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+.send
+{
+    display: none;
+}
+.formularz
+{
+    display: none;
+}
+/* sidebar */
+
+.sidebar
+{
+    position: fixed;
+    width: 150px;
+    height: 100% ;
+    background-color:yellow;
+    right: -50vw;
+    transition: 1s ease-in-out;
+}
+.sidebar.active {
+    position: fixed;
+    width: 50vw;
+    height: 100%;
+    background-color: ye;
+    right: 0px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+/* koniec sidebaru  */
+body {
+    background-color: #343a40;
+}
+.card-img{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.headerPage
+{   margin-top: 500px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.navbar>.container>.navbar-nav>.logo
+{ 
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+}
+.navbar-nav-mystyle
+{ font-size: 130%;
+}
+.logo
+{   display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.lo{
+    height: 13vh;
+}
+
+.left
+{  display: flex;
+    justify-content: flex-start;
+}
+.right
+{  display: flex;
+    justify-content: flex-end;
+}
+.container-without-margin
+{   
+    line-height: 3.5%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.padding-class
+{   color:rgb(65, 65, 65);
+    padding-left: 2%;
+    padding-right: 2%;
+    transform: translateX(+10px);
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-style
+{ justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+.navbar-nav-mystyle {
+    margin-right: -1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-dark {
+    background-color: #343a40!important;
+    display: block;
+}
+.dropdown-item:hover
+{font-size: 101%;
+    background: transparent !important;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #f8f10d;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.card-title 
+{  
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-top: 60vh;
+    font-size: 400%;
+    font-weight: bolder;
+    justify-content: center;
+    color: yellow;
+}
+#artykul
+{
+    display:flex;
+}
+.blok {
+    display: flex;
+    position: absolute;
+    width: 13vw;
+    height: 40vh;
+    background-color: #e6e317;
+    border-radius: 1%;
+    margin-left: 15%;
+    transform: translateY(-27%);
+}
+.doc
+{
+    position: absolute;
+    font-size: 330%;
+    margin-left: 15%;
+    transform: translateY(+100%);
+    font-weight: bolder;
+    color: white;
+}
+.inf
+{
+    position: absolute;
+    margin-left: 15%;
+    transform: translateY(+430%);
+    font-weight: bolder;
+    color: white;
+}
+.inf::first-letter{
+    content: "";
+    color: gray;
+}
+.bio {
+    color: #d6d41b;
+    display: flex;
+    text-align: flex-end;
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    width: 45%;
+    margin-left: 30%;
+    transform: translateY(+88%);
+    align-content: space-between;
+}
+.nextElement
+{
+    display:flex;
+    
+}
+.line
+{   display: flex;
+    position: absolute; 
+    height: 2px;
+    width: 54.5%;            /* jest problem z linią przechodzi ona przez kropke*/
+    background-color: black;
+    margin-left: 40%;
+    margin: 30%;
+}
+
+
+.blok2
+{   display: flex;
+    position: absolute; 
+    width: 22vw;
+    height: 25vh;
+    background-color: antiquewhite;
+    margin-left: 40%;
+    margin: 30%;
+}
+.aku             /*     pytanie czemu ładuje sie przy lekarzu gdy jest to nowy artykul? */
+{   display: flex;
+    position: absolute;
+    font-size: 300%;
+    width: 300%;
+    margin-left: 10%;
+    margin-top: 20%;
+    font-weight: bolder;
+}
+.igla 
+{   display: flex;
+    position: absolute;
+    transform:translateY(35%) translateX(-100%)
+}
+.inCir1 {
+    display: flex;
+    position: absolute;
+    background: transparent;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    transform: translateY(0%) translateX(-50%);
+}
+.inCir2
+{
+    display: flex;
+    position: absolute; 
+    background:transparent;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: calc(50% - 10rem/2);
+    left: calc(50% - 10rem/2);
+}
+.inCir3
+{ display: flex;
+    position: absolute; 
+    background:transparent;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: calc(50% - 5rem/2);
+    left: calc(50% - 5rem/2);
+}
+.dot
+{
+    display: flex;
+    position: absolute; 
+    background:black;
+    width: 1rem;;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: calc(50% - 1rem/2);
+    left: calc(50% - 1rem/2);
+}
+.akuInf
+{   
+    color:rgb(236, 234, 234);
+    display: flex;
+    text-align: flex-end;
+    position: absolute;        
+    justify-content: flex-end;     
+    align-self: center;          
+    width: 45%;          
+    margin-left: 33%;
+    margin-top: 101%;
+}
+
+.pic
+{display: flex;
+ margin-left: 15%;
+ margin-top: 80%;
+}
+
+.podkladka
+{   display: flex;
+    position: relative;
+    
+    width: 30%;
+    height: 600px ;
+    background-color:wheat;
+    transform: translateY(+25%) translateX(+30%)  ;
+    z-index: -1;
+
+}
+.sauna
+{
+    display: flex;
+    position:absolute;
+     width: 30%;
+}
+.prawaStrona
+{   display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    margin-left: 45% ;
+    transform: translateY(-230%)
+}
+.rside
+{   display: flex;
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 535%;
+    font-size: 230%;
+    font-weight: bolder;
+}
+.p
+{   display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateY(+260%) translateX(-140%);
+    width: 330%;
+    font-size: 90%;
+    font-weight: bolder;
+    margin-top: 10%;
+
+}
+.bole
+{
+    margin-left: 0%;
+    transform: translateY(+150%)translateX(-640%);
+    width: 120%;
+    list-style-type: square;
+
+}
+.kreg
+{
+    list-style-type: none;
+}
+
+@media (min-width: 1700px)
+{
+    .navbar-nav-mystyle:last-child
+    {margin-right: -10%;
+    }
+    .card-title 
+    {  
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        margin-top: 30vh;
+        font-size: 500%;
+        font-weight: bolder;
+        justify-content: center;
+    }
+    .card-text
+    {   
+        text-align: center;
+        font-family: 'Playfair Display', serif;  
+        font-size: 500%;
+        font-weight: bolder;
+        justify-content: center;
+    }
+    
+    .logo
+    { 
+        justify-content: center;
+        text-align: center;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-bottom: 2vh;
+        margin-left: -20px;
+    }
+}
+@media (min-width: 2300px)
+{
+    .navbar-nav-mystyle:last-child
+    {margin-right: -10%;
+    }
+    .card-title 
+    {  
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        margin-top: 30vh;
+        font-size: 900%;
+        font-weight: bolder;
+        justify-content: center;
+    }
+    .card-text
+    {   
+        text-align: center;
+        font-family: 'Playfair Display', serif;  
+        font-size: 900%;
+        font-weight: bolder;
+        justify-content: center;
+    }
+    .navbar-nav-mystyle
+    { font-size: 200%;
+        margin-left: 10vw;
+        text-align: center;
+    }
+    .logo
+    { 
+        justify-content: center;
+        text-align: center;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-bottom: 2vh;
+        margin-left: -20px;
+    }
+}
+@media (max-width: 1000px)
+{
+    #artykul
+    {
+        display:flex;
+    }
+    .blok
+    {   
+        display: flex;
+        position: absolute;
+        width: 13%;
+        height: 50%;
+        background-color: antiquewhite;
+        border-radius:  1%; 
+        margin-left: 15%;
+        transform: translateY(-45%);
+    }
+    .doc
+    {
+        position: absolute;
+        font-size: 130%;
+        margin-left: 15%;
+        transform: translateY(+100%);
+        font-weight: bolder;
+    
+    }
+    .inf
+    {
+        position: absolute;
+        margin-left: 15%;
+        transform: translateY(+430%);
+        font-weight: bolder;
+    
+    }
+     .bio                   /*   cos jest nie tak flex nie działa jak flex*/
+    {   color:gray;
+        display: flex;
+        text-align: flex-end;
+        position: absolute;        /*  to działa*/
+        justify-content: flex-end;      /*   to nie działa*/
+        align-self: center;          /*   to nie działa */
+        width: 45%;           /*  to działa*/
+        margin-left: 40%;                 /*  to działa*/
+        transform: translateY(+150%);   /*  to działa*/
+    }
+    .card-title 
+    {  position: relative;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        margin-top: 20%;
+        font-size: 180%;
+        font-weight: bolder;
+        justify-content: center;
+    }
+    .card-text
+    {   position: relative;
+        text-align: center;
+        font-family: 'Playfair Display', serif;  
+        font-size: 120%;
+        font-weight: bolder;
+        justify-content: center;
+    }
+    .navbar-nav-mystyle
+    {
+        justify-content: center;
+        text-align: center;
+    }
+    .logo
+    { 
+        justify-content: center;
+        text-align: center;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 2vh;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 786px)
+{
+    .card-title 
+    {  position: relative;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        margin-top: 30vh;
+        font-size: 130%;
+        font-weight: bolder;
+        justify-content: center;
+    }
+    .card-text
+    {   position: relative;
+        text-align: center;
+        font-family: 'Playfair Display', serif;  
+        font-size: 110%;
+        font-weight: bolder;
+        justify-content: center;
+    }
+}

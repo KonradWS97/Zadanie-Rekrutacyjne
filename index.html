@@ -1,0 +1,117 @@
+  
+<!doctype html>
+<html lang = "pl">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"
+            media="all" onload="this.media='all'">
+        <link rel="stylesheet" href="style.css" media="all" onload="this.media='all'">
+        <title>Nirvana</title>
+    </head>
+<body>
+    <div id="sidebar" class="sidebar">
+        <form >
+            <label id="textCaptcha" for="captcha">reCAPTCHA</label><br><br>
+            <Button id="captcha" onclick="captchaMy()">Sprawdzanie czy nie jesteś botem</Button><br><br>
+            <div id="formularz" class="formularz">
+                <label for="name">Imię nazwisko:</label>
+                <input type="text" id="name" name="name" onfocusout="validationName()"><br><br>
+                <p id="alertName" style="color:red"></p>
+                <label for="fname">Adres Email:</label>
+                <input type="text" id="email" name="email" onfocusout="validationEmail()"><br><br>
+                <p id="alertEmail" style="color:red"></p>
+                <label for="lname">Numer telefonu</label>
+                <input type="number" id="teleNumber" name="tele" onfocusout="validationTeleNumber()"><br><br>
+                <p id="alertNumber" style="color:red"></p>
+                <label for="lname">treść maila</label><br><br>
+                <textarea id="textEmail"name="nazwa" cols="40" rows="5" onfocusout="validationText()">Tu wpisz treść maila</textarea>
+                <p id="alertText" style="color:red"></p>
+                <br><br>
+                <input id="send" class="send" type="submit" value="wyslij">
+            </div>
+        </form>
+          
+    <script src="zadanie.js"> </script>
+    </div>
+    <header id="headerPage">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+             <a class="navbar-brand mr-auto mx-md-auto d-inline-block d-xl-none" href="#"><img class="niepotrzebnelogo" src= "logo.png" alt=" Logo"></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+               <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav-mystyle">
+                     
+                       <li class="padding-class"><a class="dropdown-item left" href="#">Kalenarz Koncertów</a></li>
+                       <li class="padding-class"> <a class="dropdown-item right" onclick ="funkcjasidebar()" href="#">Kontakt</a></li>
+                       <li> <a class="navbar-brand logo" href="#"><img class="lo"  src= "logo.png" alt="Logo"></a></li>
+                       <li class="padding-class"><a class="dropdown-item left" href="#">Sklep z płytami</a></li>
+                       <li class="padding-class"> <a class="dropdown-item right" href="#">O Zespole </a></li>
+                       
+               </ul>
+         </nav>
+         
+         <div class="card bg-dark text-dark">
+           <img src="plakat.jpg" class="card-img" alt="doktor">
+           <div class="card-img-overlay">
+             <h5 class="card-title">Zespół stólecia </h5>
+             
+           </div>
+         </div>
+     </header>
+     <article class="artykul flexbox-container">
+       <div class="blok"></div> 
+       
+       <h2 class="doc"> Prekursorzy Grunga </h2>
+       <h4 class="inf">Nirvana czyli zgaśniecie</h4>
+      <p class="bio">Cobain i Novoselic poznali się w 1985. Obaj byli fanami zespołu Melvins, 
+            uczyli się akordów do utworów tej grupy oraz uczęszczali na jej koncerty. 
+            Po kilku nieudanych próbach założenia własnego zespołu, Cobain i Novoselic połączyli siły z perkusistą Aaronem Burckhardem, 
+            tworząc pierwsze wcielenie grupy, która w wyniku wielu późniejszych zmian nazwy stała się ostatecznie Nirvaną.
+             W późniejszych wywiadach Cobain określił wczesną muzykę zespołu jako „mieszankę Gang of Four i Scratch Acid”.
+            Po kilku miesiącach Burckhard rozstał się z kapelą, jego miejsce zajął Dale Crover z Melvins, z którym Nirvana
+             nagrała swoje pierwsze dema. Po odejściu Crovera perkusistą został Dave Foster
+       </p>  
+    
+     
+     </article>
+     <article class="artyku2 flexbox-container">
+      <div class="nextElement">
+      <div class="blok2">
+       <h2 class="aku"> Kurt Cobain</h2> 
+       <div class="insideCir">
+         <img src="kurt.jpg" class="igla" alt="kurt"> 
+          <div class="inCir1">
+           <div class="inCir2">
+            <div class="inCir3"> <div class="dot"></div> </div>
+           </div>
+         </div>  
+       </div>
+      </div> 
+       <div class="line"></div> 
+       <p class="akuInf">
+        Kurt od wczesnej młodości cierpiał na chroniczne bóle brzucha, 
+        których jednak nie potrafili zdiagnozować lekarze. Brał narkotyki – bo jak twierdził – tylko one pomagały mu w uśmierzeniu bólu.
+        Pierwsze doświadczenie Kurta z narkotykami miało miejsce, gdy ten miał 13 lat – po raz pierwszy palił wtedy konopie indyjskie.
+        Z wiekiem zaczął eksperymentować i zażywać różne rodzaje substancji, między innymi LSD. Cobain był również podatny na alkoholizm.
+        Kurt zażył heroinę po raz pierwszy w 1986 roku, w latach 80. i 90. narkotyk ten był bardzo popularny i łatwo dostępny 
+        w rodzinnym stanie Cobaina – Waszyngtonie. Później artysta zażywał heroinę sporadycznie – dopiero w latach 90. na skutek zwiększającej
+        się sławy i bólu brzucha uzależnienie muzyka pogłębiło się.
+       </p>
+     
+    </article>
+   
+   
+   
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+       crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
