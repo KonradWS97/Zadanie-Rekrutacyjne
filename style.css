@@ -11,7 +11,7 @@
     height: 50px;
     background-color: red;
     border-radius: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     z-index: 1;
 }
@@ -26,6 +26,7 @@
 .send
 {
     display: none;
+    transform: translateY(-5vh);
 }
 .formularz
 {
@@ -355,6 +356,14 @@ body {
     width: 90%!important;
     height: 90%!important;
     margin-left: 4vw;
+}
+.formToManager{
+    margin: 5%;
+    background-color: #dee2e6;
+    border-radius: 10%;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    box-shadow: 0 0 7px 3px rgba(117, 0, 0, 0.575)
 }
 
 @media (min-width: 1700px)
